@@ -16,6 +16,7 @@ from .const import (
     DEVICES
 )
 from .midea.devices.e6.device import DeviceAttributes as E6Attributes
+from .midea.devices.e2.device import DeviceAttributes as E2Attributes
 from .midea.devices.c3.device import DeviceAttributes as C3Attributes
 from .midea.devices.cd.device import DeviceAttributes as CDAttributes
 from .midea_devices import MIDEA_DEVICES
@@ -147,6 +148,12 @@ class MideaE2WaterHeater(MideaWaterHeater):
     @property
     def max_temp(self):
         return E2_TEMPERATURE_MAX
+
+    @property
+    def state(self):
+        return STATE_ON if \
+            self._device.get_attribute(E2Attributes.heating) \
+            else STATE_OFF
 
 
 class MideaE3WaterHeater(MideaWaterHeater):
