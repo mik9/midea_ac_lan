@@ -151,7 +151,7 @@ class MideaE2WaterHeater(MideaWaterHeater):
 
     @property
     def state(self):
-        return STATE_ON if \
+        return STATE_ELECTRIC if \
             self._device.get_attribute(E2Attributes.heating) \
             else STATE_OFF
 
