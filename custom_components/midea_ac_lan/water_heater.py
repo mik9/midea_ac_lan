@@ -155,10 +155,6 @@ class MideaE2WaterHeater(MideaWaterHeater):
             self._device.get_attribute(E2Attributes.heating) \
             else STATE_OFF
 
-    @property
-    def precision(self):
-        return PRECISION_WHOLE
-
 
 class MideaE3WaterHeater(MideaWaterHeater):
     def __init__(self, device, entity_key):
