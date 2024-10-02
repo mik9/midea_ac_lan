@@ -2,6 +2,6 @@
     "name": "Midea AC LAN (mik9)",
     "render_readme": true,
     "homeassistant": "2022.5",
-    "zip_release": true,
+    "zip_release": false,
     "filename": "mieda_ac_lan.zip"
 }
