@@ -1,5 +1,5 @@
 {
-    "name": "Midea AC LAN",
+    "name": "Midea AC LAN (mik9)",
     "render_readme": true,
     "homeassistant": "2022.5",
     "zip_release": true,
